@@ -17,8 +17,14 @@ export const Layout = ({ title, children }) => {
               <a className="text-lg font-bold">Shopping Center</a>
             </Link>
             <div>
-              <Link href="/first-shop">
+              <Link href="/shop/first-shop">
                 <a className="p-2">First-shop</a>
+              </Link>
+              <Link href="/shop/second-shop">
+                <a className="p-2">Second-shop</a>
+              </Link>
+              <Link href="/shop/third-shop">
+                <a className="p-2">Third-shop</a>
               </Link>
             </div>
           </nav>
