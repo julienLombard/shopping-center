@@ -2,10 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 // import Image from 'next/image';
 
-export const Shop = ({ shop }) => {
+export const ShopCard = ({ shop }) => {
   return (
     <div className="card">
-      <Link href={`/shop/${shop.slug}`}>
+      <Link href={`${shop.slug}`}>
         <a>
           {/* <Image src={shop.image} alt={shop.name} className="rounded shadow" /> */}
           <img src={shop.image} alt={shop.name} className="rounded shadow" />
@@ -13,7 +13,7 @@ export const Shop = ({ shop }) => {
       </Link>
 
       <div className="flex flex-col items-center justify-center p-5">
-        <Link href={`/shop/${shop.slug}`}>
+        <Link href={`${shop.slug}`}>
           <a>
             <h2 className="text-lg">{shop.name}</h2>
           </a>
